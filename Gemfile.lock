@@ -9,6 +9,8 @@ GEM
   specs:
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.3.0)
+    bigdecimal (3.3.1)
     colorator (1.1.0)
     concurrent-ruby (1.3.5)
     csv (3.3.5)
@@ -53,6 +55,8 @@ GEM
       listen (~> 3.0)
     kramdown (2.5.1)
       rexml (>= 3.3.9)
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     liquid (4.0.4)
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
@@ -81,7 +85,6 @@ PLATFORMS
   arm-linux-gnu
   arm-linux-musl
   arm64-darwin
-  ruby
   x86-linux-gnu
   x86-linux-musl
   x86_64-darwin
@@ -89,8 +92,13 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  base64
+  bigdecimal
   bundler (~> 2.1)
+  csv
+  jekyll (~> 3.10)
   jekyll-paginate (~> 1.1.0)
+  kramdown-parser-gfm
   phantom!
   rake (~> 13.0.1)
 
